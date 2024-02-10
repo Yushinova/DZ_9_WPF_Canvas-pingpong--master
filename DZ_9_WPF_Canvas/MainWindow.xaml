@@ -1,0 +1,45 @@
+﻿<Window x:Class="_17._01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_17._01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" BorderBrush="White" MouseMove="Window_MouseMove">
+    <Canvas 
+        x:Name="canvas"
+        Background="Black" 
+        Margin="5,5,5,5"
+        Width="790"
+        Height="400"
+        >
+        <Rectangle 
+            x:Name="PC"
+            Fill="White"
+            Width="20"
+            Height="65"
+            Canvas.Left="10"
+            />
+        <Rectangle 
+            x:Name="User"
+            Fill="White"
+            Width="20"
+            Height="65"
+            Canvas.Right="10"
+            />
+        <Ellipse
+            x:Name="Ball"
+            Fill="White"
+            Width="30"
+            Height="30" Canvas.Left="236" Canvas.Top="154"
+            />
+        <Rectangle
+            Fill="White" Width="5" Height="400" Margin="390,0,0,0"/>
+        <Label x:Name="UserSсore" Content="0" FontSize="35"
+               Margin="340,0,0,0" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="BotSсore" Content="0" FontSize="35"
+       Margin="410,0,0,0" Foreground="White" FontWeight="Bold"/>
+        <!--<TextBox x:Name="TextChange" Canvas.Left="575" TextWrapping="Wrap" Text="TextBox" Canvas.Top="10" Width="120"/>-->
+    </Canvas>
+    
+</Window>
