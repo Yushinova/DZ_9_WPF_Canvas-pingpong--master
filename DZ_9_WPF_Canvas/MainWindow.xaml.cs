@@ -51,12 +51,12 @@ namespace _17._01
             //TextChange.Text = Canvas.GetLeft(Ball).ToString();
             if (Canvas.GetLeft(Ball) == 0 /*&& Canvas.GetTop(Ball) != Canvas.GetTop(pc)*/)
             {
-                userscore ++;
+                userscore +=1;
                 // UserSсore.Content = userscore.ToString();
             }
             if (Canvas.GetLeft(Ball) == canvas.Width-Ball.Width && Canvas.GetTop(Ball) != Canvas.GetTop(user))
             {
-                pcscore ++;
+                pcscore +=1;
                 //BotSсore.Content = userscore.ToString();
             }
         }
